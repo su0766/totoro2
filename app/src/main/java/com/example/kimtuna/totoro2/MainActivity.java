@@ -71,12 +71,13 @@ public class MainActivity extends AppCompatActivity
     }
     GridLayout container;
     private void changeView (int index) {
-        LayoutInflater inflater = (LayoutInflater) getSystemService( Context.LAYOUT_INFLATER_SERVICE );
-        container = (GridLayout)findViewById(R.id.include);
+        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        container = (GridLayout) findViewById(R.id.include);
 
         if (container.getChildCount() > 0) {
             container.removeViewAt(0);
         }
+    }
 }
 /*
         switch (item.getItemId()) {
